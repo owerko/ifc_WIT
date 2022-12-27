@@ -1,0 +1,23 @@
+{
+  "name": "ifc",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "update-ifcjs": "npm i web-ifc-three@latest && npm i && npm run copy-wasm",
+    "copy-wasm": "cp node_modules/web-ifc/web-ifc.wasm . && cp node_modules/web-ifc/web-ifc-mt.wasm ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.8.1"
+  },
+  "dependencies": {
+    "three": "^0.135.0",
+    "web-ifc-three": "^0.0.121"
+  },
+  "description": ""
+}

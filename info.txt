@@ -1,0 +1,4 @@
+npm init --yes
+npm i rollup @rollup/plugin-node-resolve --save-dev
+npm run build
+
